@@ -5,41 +5,42 @@
    хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и
    ослы), а затем объединить их. Просмотреть содержимое созданного файла.
    Переименовать файл, дав ему новое имя (Друзья человека).
-![img.png](src/test/imsge/img.png)
-![img_2.png](src/test/imsge/img_2.png)
-![img_3.png](src/test/imsge/img_3.png)
+![img.png](src/test/images/img.png)
+![img_2.png](src/test/images/img_2.png)
+![img_3.png](src/test/images/img_3.png)
 
 2. Создать директорию, переместить файл туда.
 
-![img_4.png](src/test/imsge/img_4.png)
+![img_4.png](src/test/images/img_4.png)
 
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
    из этого репозитория.
 
-![img_5.png](src/test/imsge/img_5.png)
-![img_6.png](src/test/imsge/img_6.png)  
-![img_7.png](src/test/imsge/img_7.png)
+![img_5.png](src/test/images/img_5.png)
+![img_6.png](src/test/images/img_6.png)  
+![img_7.png](src/test/images/img_7.png)
 
 4. Установить и удалить deb-пакет с помощью dpkg.
 
-![img_8.png](src/test/imsge/img_8.png)
+![img_8.png](src/test/images/img_8.png)
 
 5. Выложить историю команд в терминале ubuntu
 
-![img_9.png](src/test/imsge/img_9.png)
-![img_10.png](src/test/imsge/img_10.png)
+![img_9.png](src/test/images/img_9.png)
+![img_10.png](src/test/images/img_10.png)
 
 6. Нарисовать диаграмму, в которой есть класс родительский класс, домашние
    животные и вьючные животные, в составы которых в случае домашних
    животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
    войдут: Лошади, верблюды и ослы).
-![img_11.png](src/test/imsge/img_11.png)
+![img_11.png](src/test/images/img_11.png)
 7. В подключенном MySQL репозитории создать базу данных “Друзья
    человека”
-![img_12.png](src/test/imsge/img_12.png)
+![img_12.png](src/test/images/img_12.png)
 8. Создать таблицы с иерархией из диаграммы в БД
-![img.png](src/test/imsge/img_12.png)
-![img.png](src/test/imsge/img_12.png)
+![img.png](src/test/images/img_13.png)
+![img.png](src/test/images/img_14.png)
+![img.png](src/test/images/img_15.png)
 9. Заполнить низкоуровневые таблицы именами(животных), командами
    которые они выполняют и датами рождения
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
