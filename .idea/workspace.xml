@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/images/img_13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/img_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/img_15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/imsge/img_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/images/img_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/images/img_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/images/img_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/images/img_15.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690206588055</updated>
-      <workItem from="1690206589793" duration="18158000" />
+      <workItem from="1690206589793" duration="18743000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -140,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690400754548</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;сделаны таблицы домашних животных&quot;">
+      <created>1690402283752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690402283752</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +147,7 @@
     <MESSAGE value="&quot;6 пункт сделан&quot;" />
     <MESSAGE value="&quot;7 пункт сделан&quot;" />
     <MESSAGE value="&quot;8ой пункт в работе&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;8ой пункт в работе&quot;" />
+    <MESSAGE value="&quot;сделаны таблицы домашних животных&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;сделаны таблицы домашних животных&quot;" />
   </component>
 </project>
