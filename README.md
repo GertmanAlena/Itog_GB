@@ -6,6 +6,9 @@
    ослы), а затем объединить их. Просмотреть содержимое созданного файла.
    Переименовать файл, дав ему новое имя (Друзья человека).
 
+![img_0.png](src/test/images/img_0.png)
+![imgSA.png](src/test/images/imgSA.png)
+![img.png](src/test/images/imgALL.png)
 ![img_2.png](src/test/images/img_2.png)
 ![img_3.png](src/test/images/img_3.png)
 
