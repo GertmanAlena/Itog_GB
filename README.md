@@ -41,9 +41,9 @@
    человека”
 ![img_12.png](src/test/images/img_12.png)
 8. Создать таблицы с иерархией из диаграммы в БД
-![img_13.png](src/test/images/img_13.png)
-![img_14.png](src/test/images/img_14.png)
-![img_15.png](src/test/images/img_15.png)
+![nursery.png](src/test/images/nursery.png)
+![home_animals.png](src/test/images/home_animals.png)
+![home_and_pask.png](src/test/images/home_and_pask.png)   
 9. Заполнить низкоуровневые таблицы именами(животных), командами
    которые они выполняют и датами рождения
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
