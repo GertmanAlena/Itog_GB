@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/images/img_15.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/images/img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690206588055</updated>
-      <workItem from="1690206589793" duration="19279000" />
+      <workItem from="1690206589793" duration="19956000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690468954633</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="&quot;сделаны таблицы домашних животных&quot;">
+      <created>1690469318023</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469318023</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
