@@ -10,8 +10,7 @@
 ![imgSA.png](src/test/images/imgSA.png)
 ![imgALL.png](src/test/images/imgALL.png)
 ![rename.png](src/test/images/rename.png)
-![img_2.png](src/test/images/img_2.png)
-![img_3.png](src/test/images/img_3.png)
+
 
 2. Создать директорию, переместить файл туда.
 
