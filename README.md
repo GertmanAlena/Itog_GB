@@ -43,9 +43,14 @@
 8. Создать таблицы с иерархией из диаграммы в БД
 ![nursery.png](src/test/images/nursery.png)
 ![home_animals.png](src/test/images/home_animals.png)
-![home_and_pask.png](src/test/images/home_and_pask.png)   
+![home_and_pask.png](src/test/images/home_and_pask.png)
+![cat.png](src/test/images/cat.png)
+
 9. Заполнить низкоуровневые таблицы именами(животных), командами
    которые они выполняют и датами рождения
+
+![add_cats.png](src/test/images/add_cats.png)
+
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
     питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
     11.Создать новую таблицу “молодые животные” в которую попадут все
