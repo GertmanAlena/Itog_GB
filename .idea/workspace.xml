@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/images/del_camel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/horses_dogs_add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/union.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/create_young.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/show.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/temp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/young_animals.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/studies/JAVA/Itog_GB_2023/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,6 +44,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\studies\JAVA\Itog_GB_2023\src\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\studies\JAVA\Itog_GB_2023\src\test\images" />
       <recent name="D:\studies\JAVA\Itog_GB_2023\src\test\imsge" />
@@ -55,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690206588055</updated>
-      <workItem from="1690206589793" duration="28538000" />
+      <workItem from="1690206589793" duration="30877000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -225,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690606380002</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="&quot;заполника таблицу котов&quot;">
+      <created>1690609054084</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690609054084</updated>
+    </task>
+    <task id="LOCAL-00026" summary="&quot;10 пункт&quot;">
+      <created>1690609092526</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690609092526</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +261,7 @@
     <MESSAGE value="&quot;сделаны таблицы домашних животных&quot;" />
     <MESSAGE value="&quot;сделаны таблицы вьючных животных&quot;" />
     <MESSAGE value="&quot;заполника таблицу котов&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;заполника таблицу котов&quot;" />
+    <MESSAGE value="&quot;10 пункт&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;10 пункт&quot;" />
   </component>
 </project>
