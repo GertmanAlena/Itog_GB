@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/images/create_young.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/show.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/young_animals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/unification_of_all.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/images/unification_of_all2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690206588055</updated>
-      <workItem from="1690206589793" duration="30877000" />
+      <workItem from="1690206589793" duration="31876000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -244,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690609092526</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="&quot;11 пункт&quot;">
+      <created>1690659160089</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690659160089</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +267,7 @@
     <MESSAGE value="&quot;сделаны таблицы вьючных животных&quot;" />
     <MESSAGE value="&quot;заполника таблицу котов&quot;" />
     <MESSAGE value="&quot;10 пункт&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;10 пункт&quot;" />
+    <MESSAGE value="&quot;11 пункт&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;11 пункт&quot;" />
   </component>
 </project>
