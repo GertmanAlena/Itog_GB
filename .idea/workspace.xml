@@ -5,14 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/images/unification_of_all.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/images/unification_of_all2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/AnimalType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/AnimalTypeHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Animals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Cats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Dogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/HomeAnimals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/PaskAnimals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Nursery/Nursery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestException/TestEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UI/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UI/ConsoleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml.drawio" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/studies/JAVA/Itog_GB_2023/src/test",
+    "last_opened_file_path": "D:/studies/JAVA/Itog_GB_2023",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +75,13 @@
       <recent name="D:\studies\JAVA\Itog_GB_2023\src\test\images" />
       <recent name="D:\studies\JAVA\Itog_GB_2023\src\test\imsge" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.Core.MVP.Animals" />
+      <recent name="org.example" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690206588055</updated>
-      <workItem from="1690206589793" duration="31876000" />
+      <workItem from="1690206589793" duration="45843000" />
+      <workItem from="1690725613468" duration="11598000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -249,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690659160089</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="&quot;12 пункт&quot;">
+      <created>1690661134077</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1690661134077</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +309,41 @@
     <MESSAGE value="&quot;заполника таблицу котов&quot;" />
     <MESSAGE value="&quot;10 пункт&quot;" />
     <MESSAGE value="&quot;11 пункт&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;11 пункт&quot;" />
+    <MESSAGE value="&quot;12 пункт&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;12 пункт&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/UI/App.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/UI/App.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Model.java</url>
+          <line>39</line>
+          <properties class="org.example.Core.MVP.Model">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Presenter.java</url>
+          <line>17</line>
+          <properties class="org.example.Core.MVP.Presenter" method="createAnimal">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
