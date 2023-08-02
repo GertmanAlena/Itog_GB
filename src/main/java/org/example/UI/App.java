@@ -1,7 +1,6 @@
 package org.example.UI;
 
 import org.example.Animals.Animals;
-import org.example.Config;
 import org.example.Core.MVP.Presenter;
 import org.example.Core.MVP.View;
 import org.example.Core.MVP.Presenter.*;
@@ -13,10 +12,8 @@ public class App {
 
     public static void start() throws Exception{
 
-        Config config = new Config();
         View view = new ConsoleView();
         Presenter presenter = new Presenter(view);
-        config.createNursery();
         try (Scanner scan = new Scanner(System.in)) {
             while (true) {
                 System.out.println("\033[1;34m***Выбирай, что будем делать***\033[0m");

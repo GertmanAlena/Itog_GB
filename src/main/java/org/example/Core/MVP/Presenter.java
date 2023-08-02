@@ -2,16 +2,11 @@ package org.example.Core.MVP;
 
 
 import org.example.Animals.*;
-import org.example.Config;
-import org.example.Core.MVP.Model;
-import org.example.UI.App;
-import org.example.Config.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 import static java.sql.DriverManager.getConnection;
 
@@ -20,14 +15,13 @@ public class Presenter {
     private View view;
     private Model model;
     private String SQLst;
-    private Config config;
 
     public Presenter(View view) {
         this.view = view;
         model = new Model();
     }
 
-    public void createAnimal() throws IOException {
+    public void createAnimal() throws IOException, SQLException, ClassNotFoundException {
 
         AnimalType animalType = view.getTypeAnimals();
         System.out.println(animalType);
@@ -56,17 +50,17 @@ public class Presenter {
     public void create(Animals animal, int id) {
          try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            try (Connection dbConnection = Config.connection) {
+            try (Connection dbConnection = getConnection()) {
 
                 SQLst = "INSERT INTO animalTypeHome (Name, Birthday, Commands, Genus_id) VALUES (?, ?, ?, id)";
                 PreparedStatement prepSt = dbConnection.prepareStatement(SQLst);
                 prepSt.setString(1, animal.getName());
                 prepSt.setDate(2, Date.valueOf(animal.getBirthday()));
                 prepSt.setString(3, animal.getCommands());
-//                rows = prepSt.executeUpdate();
-//                return rows;
+                prepSt.executeUpdate();
+
             }
-        } catch (SQLException e) {
+         } catch (SQLException e) {
             System.out.println("...");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
@@ -74,57 +68,59 @@ public class Presenter {
 //        catch (ClassNotFoundException | IOException | SQLException ex) {
 //            Logger.getLogger(PetRepository.class.getName()).log(Level.SEVERE, null, ex);
 //            throw new RuntimeException(ex.getMessage());
-        }
+    }
+
+
 
     /**
      * создание таблицы домашних или диких питомцев
      */
-    public boolean createTable(AnimalType animalType) {
-        try(Connection conn = DriverManager.getConnection(Config.URL, Config.USER_NAME, Config.PASSWORD);
-            Statement stmt = conn.createStatement();
-        ) {
-            String sql = "CREATE TABLE animalType IF NOT EXISTS" +
-                    "(Id INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "Genus_name VARCHAR (20), " +
-                    "Class_id INT, " +
-                    "FOREIGN KEY (Class_id) REFERENCES Nursery (Id) ON DELETE CASCADE ON UPDATE CASCADE\n" +
-                    "))";
+    public boolean createTable(AnimalType animalType) throws SQLException, IOException, ClassNotFoundException {
 
-            stmt.executeUpdate(sql);
-            System.out.println("Created table " + animalType + " in given database...");
-            if (animalType == AnimalType.HOME_ANIMALS){
-                String sql2 = "INSERT INTO animalType (Genus_name, Class_id)" +
-                        "VALUES ('Кошки', 1),\n" +
-                        "('Собаки', 1),  \n" +
-                        "('Хомяки', 1)";
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            try (Connection dbConnection = getConnection()) {
 
-                stmt.executeUpdate(sql2);
-                System.out.println("Заполнили animalType...");
-            } else {
-                String sql2 = "INSERT INTO animalType (Genus_name, Class_id)" +
-                        "VALUES ('Лошади', 2),\n" +
-                        "('Верблюды', 2),  \n" +
-                        "('Ослики', 2)";
+                SQLst = "CREATE TABLE animalType IF NOT EXISTS" +
+                        "(Id INT AUTO_INCREMENT PRIMARY KEY, " +
+                        "Genus_name VARCHAR (20), " +
+                        "Class_id INT, " +
+                        "FOREIGN KEY (Class_id) REFERENCES Nursery (Id) ON DELETE CASCADE ON UPDATE CASCADE\n" +
+                        "))";
+                PreparedStatement prepSt = dbConnection.prepareStatement(SQLst);
+                prepSt.executeUpdate(SQLst);
+                System.out.println("Created table " + animalType + " in given database...");
+                if (animalType == AnimalType.HOME_ANIMALS) {
+                    String sql2 = "INSERT INTO animalType (Genus_name, Class_id)" +
+                            "VALUES ('Кошки', 1),\n" +
+                            "('Собаки', 1),  \n" +
+                            "('Хомяки', 1)";
 
-                stmt.executeUpdate(sql2);
-                System.out.println("Заполнили animalType...");
+                    prepSt.executeUpdate(sql2);
+                    System.out.println("Заполнили animalType...");
+                } else {
+                    String sql2 = "INSERT INTO animalType (Genus_name, Class_id)" +
+                            "VALUES ('Лошади', 2),\n" +
+                            "('Верблюды', 2),  \n" +
+                            "('Ослики', 2)";
+
+                    prepSt.executeUpdate(sql2);
+                    System.out.println("Заполнили animalType...");
+                }
+
+
             }
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
+            return true;
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
-        return true;
     }
     /**
      * создание таблицы cat, dog...
      */
     public boolean createTableAnimal(AnimalTypeHome animalTypeHome) {
-        try(Connection conn = DriverManager.getConnection(Config.URL, Config.USER_NAME, Config.PASSWORD);
-            Statement stmt = conn.createStatement();
-        ) {
-            String sql = "CREATE TABLE animalTypeHome IF NOT EXISTS" +
+        try(Connection dbConnection = getConnection()) {
+            SQLst = "CREATE TABLE animalTypeHome IF NOT EXISTS" +
                     "(Id INT AUTO_INCREMENT PRIMARY KEY, " +
                     "Name VARCHAR()" +
                     "Birthday DATE, " +
@@ -133,7 +129,8 @@ public class Presenter {
                     "Foreign KEY (Genus_id) REFERENCES HOME_ANIMALS (Id) ON DELETE CASCADE ON UPDATE CASCADE\n" +
                     "))";
 
-            stmt.executeUpdate(sql);
+            PreparedStatement prepSt = dbConnection.prepareStatement(SQLst);
+            prepSt.executeUpdate(SQLst);
             System.out.println("Created table in given database...");
 
         } catch (SQLException e) {
@@ -142,7 +139,24 @@ public class Presenter {
         }
         return true;
     }
+    public static Connection getConnection() {
 
+        Properties props = new Properties();
+        try (FileInputStream fis =
+                     new FileInputStream("src/Resources/database.properties")) {
+
+            props.load(fis);
+            String url = props.getProperty("url");
+            String username = props.getProperty("username");
+            String password = props.getProperty("password");
+
+            return DriverManager.getConnection(url, username, password);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 
 

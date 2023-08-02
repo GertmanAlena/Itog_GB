@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="&quot;java&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/Animals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/Cats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/Nursery/Nursery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GroupIterator/GroupIterator.java" afterDir="false" />
+    <list default="true" id="b8c2cf24-9746-40eb-af0a-3f0192f1e6a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Resources/database/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/AnimalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/AnimalType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/AnimalTypeHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/AnimalTypeHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Animals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Cats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/Dogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/Dogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/HomeAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/HomeAnimals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Animals/PaskAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Animals/PaskAnimals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Nursery/Nursery.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Core/MVP/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UI/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UI/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UI/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UI/ConsoleView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -124,7 +108,7 @@
       <updated>1690206588055</updated>
       <workItem from="1690206589793" duration="45843000" />
       <workItem from="1690725613468" duration="34446000" />
-      <workItem from="1690991127903" duration="15368000" />
+      <workItem from="1690991127903" duration="19682000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;начало работы&quot;">
       <created>1690222135310</created>
@@ -329,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690737736478</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="&quot;java&quot;">
+      <created>1691006936420</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1691006936420</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,12 +359,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/UI/App.java</url>
-          <line>31</line>
+          <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/UI/App.java</url>
-          <line>10</line>
+          <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -411,15 +402,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Presenter.java</url>
-          <line>29</line>
-          <properties class="org.example.Core.MVP.Presenter" method="createAnimal">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Core/MVP/Model.java</url>
