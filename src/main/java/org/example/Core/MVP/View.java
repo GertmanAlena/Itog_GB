@@ -1,18 +1,19 @@
 package org.example.Core.MVP;
 
-import org.example.Core.MVP.Animals.AnimalType;
-import org.example.Core.MVP.Animals.AnimalTypeHome;
+import org.example.Animals.AnimalType;
+import org.example.Animals.AnimalTypeHome;
 
 public interface View {
 
     AnimalType getTypeAnimals();
+    String getBirthday();
 
 
     AnimalTypeHome getTypeAnimalsHome();
 
     String getName();
 
-    String getBirthday();
+
 
     String getCommands();
 }

@@ -1,19 +1,22 @@
 package org.example.UI;
 
+import org.example.Animals.Animals;
 import org.example.Config;
 import org.example.Core.MVP.Presenter;
 import org.example.Core.MVP.View;
-
+import org.example.Core.MVP.Presenter.*;
 import java.util.Scanner;
 
 
 public class App {
 
+
     public static void start() throws Exception{
 
+        Config config = new Config();
         View view = new ConsoleView();
-        Presenter presenter = new Presenter(view, Config.pathDb);
-
+        Presenter presenter = new Presenter(view);
+        config.createNursery();
         try (Scanner scan = new Scanner(System.in)) {
             while (true) {
                 System.out.println("\033[1;34m***Выбирай, что будем делать***\033[0m");
@@ -27,6 +30,7 @@ public class App {
                 switch (key) {
                     case "1":
                         presenter.createAnimal();
+
                         break;
                     case "2":
                         ///countToy = presenter.giveaway(createType(2));
@@ -52,6 +56,7 @@ public class App {
             }
         }
     }
+
 
 
 }

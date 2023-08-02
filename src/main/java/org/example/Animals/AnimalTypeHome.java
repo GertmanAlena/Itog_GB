@@ -1,4 +1,4 @@
-package org.example.Core.MVP.Animals;
+package org.example.Animals;
 
 public enum AnimalTypeHome {
         CAT,
