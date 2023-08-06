@@ -26,6 +26,7 @@ public class App {
                         "\033[1;34m7\033[0m - Удалить выбранное животное " + "\n" +
                         "\033[1;34m8\033[0m - Список команд животного" + "\n" +
                         "\033[1;34m9\033[0m - Добавить команду животному" + "\n" +
+                        "\033[1;34m10\033[0m - Количество животных" + "\n" +
                         "\n\033[1;35mДля выхода нажмите (0)\033[0m");
                 String key = scan.next();
                 System.out.print("\033[H\033[J");
@@ -57,13 +58,14 @@ public class App {
                     case "9":
                         presenter.addCommand();
                         break;
+                    case "10":
+                        System.out.println("Количество животных в питомнике = " + presenter.countAllAnimals());
+                        break;
                     case "0":
                         System.out.println("До скорых встреч!");
                         System.exit(0);
                         break;
-
-
-                    default:
+                   default:
                         System.out.println("Такой команды нет");
                         break;
                 }

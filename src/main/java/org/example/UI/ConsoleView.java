@@ -16,60 +16,67 @@ public class ConsoleView implements View {
 
     @Override
     public AnimalType getTypeAnimals() {
-        try{
+        try {
             System.out.println("\033[1;34m1\033[0m - Домашнее животное " + "\n" +
                     "\033[1;34m2\033[0m - Вьючное животное" + "\n");
-            if (in.nextInt() == 1) {
-                return AnimalType.HOME_ANIMALS;
-            } else if (in.nextInt() == 2){
-                return AnimalType.PASK_ANIMALS;
+            String key = in.next();
+            switch (key) {
+                case "1":
+                    return AnimalType.HOME_ANIMALS;
+                case "2":
+                    return AnimalType.PASK_ANIMALS;
+                default:
+                    System.out.println("\u001B[31mЧто-то введено не так!!!!\033[0m");
+                    break;
             }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } finally {
+            System.out.println("\u001B[31m--------------!!!!\033[0m");
         }
-
-        System.out.println("\033[1;34mЧто-то введено не так\033[0m");
         return null;
     }
-
     @Override
     public AnimalTypeHome getTypeAnimalsHome() {
-        System.out.println("\033[1;34m1\033[0m - Кошки  " + "\033[1;34m2\033[0m - Собаки  " + "\033[1;34m3\033[0m - Хомячки" + "\n");
-
         try{
-            if (in.nextInt() == 1) {
-                return AnimalTypeHome.CAT;
-            } else if (in.nextInt() == 2) {
-                return AnimalTypeHome.DOG;
+            System.out.println("\033[1;34m1\033[0m - Кошки  " + "\033[1;34m2\033[0m - Собаки  " + "\033[1;34m3\033[0m - Хомячки" + "\n");
+            String key = in.next();
+            switch (key) {
+                case "1":
+                    return AnimalTypeHome.CAT;
+                case "2":
+                    return AnimalTypeHome.DOG;
+                case "3":
+                    return AnimalTypeHome.HAMSTER;
+                default:
+                    System.out.println("\u001B[31mЧто-то введено не так!!!!\033[0m");
+                    break;
             }
-            else if (in.nextInt() == 3) {
-                return AnimalTypeHome.HAMSTER;
-            }
-
-        } catch (Exception e) {
+            return null;
+        } catch (RuntimeException e) {
             System.out.println("\033[1;34mЧто-то введено не так\033[0m");
             throw new RuntimeException(e);
-
         }
-        return null;
+
     }
     @Override
     public AnimalTypePack getTypeAnimalsPack() {
-        System.out.println("\033[1;34m1\033[0m - Верблюды  " + "\033[1;34m2\033[0m - Лошади  " +
-                "\033[1;34m3\033[0m - Ослики" + "\n");
-
-        if (in.nextInt() == 1) {
-            return AnimalTypePack.CAMEL;
-        } else if (in.nextInt() == 2) {
-            return AnimalTypePack.HORSES;
-        } else if (in.nextInt() == 3) {
-            return AnimalTypePack.DONKEYS;
-
+        try{
+            System.out.println("\033[1;34m1\033[0m - Верблюды  " + "\033[1;34m2\033[0m - Лошади  " +
+                    "\033[1;34m3\033[0m - Ослики" + "\n");
+            String key = in.next();
+            switch (key) {
+                case "1":
+                    return AnimalTypePack.HORSES;
+                case "2":
+                    return AnimalTypePack.DONKEYS;
+                case "3":
+                    return AnimalTypePack.CAMEL;
+                default:
+                    System.out.println("\u001B[31mЧто-то введено не так!!!!\033[0m");
+                    break;
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-//        else if (in.nextInt() == 3) {
-//            return AnimalTypeHome
-//        }
-        else System.out.println("\033[1;34mЧто-то введено не так\033[0m");
         return null;
     }
 

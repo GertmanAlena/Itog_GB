@@ -1,14 +1,14 @@
 package org.example.Animals;
 
-public class Horses extends Animals {
+public class Donkeys extends Animals {
 
     private AnimalTypePack animalTypePack;
     private Integer classId;
     private Integer idAnimal;
     AnimalTypePack animalType;
-    public Horses(String name, String birthday, String commands) {
+    public Donkeys(String name, String birthday, String commands) {
         super(name, birthday, commands);
-        this.animalTypePack = AnimalTypePack.HORSES;
+        this.animalTypePack = AnimalTypePack.DONKEYS;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Horses extends Animals {
     }
 
     public void setAnimalTypePack() {
-        this.animalTypePack = AnimalTypePack.HORSES;}
+        this.animalTypePack = AnimalTypePack.DONKEYS;}
 
 
     @Override

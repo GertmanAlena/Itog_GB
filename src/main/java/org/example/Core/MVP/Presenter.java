@@ -30,7 +30,7 @@ public class Presenter {
 
     public void createAnimal() throws IOException {
 
-        AnimalType animalType = view.getTypeAnimals(); // HOME_ANIMALS или PASK_ANIMALS
+        AnimalType animalType = (AnimalType) view.getTypeAnimals(); // HOME_ANIMALS или PASK_ANIMALS
         System.out.println("animalType " + animalType);
         if (animalType == AnimalType.HOME_ANIMALS) {
             AnimalTypeHome animalTypeHome = view.getTypeAnimalsHome();
@@ -55,7 +55,12 @@ public class Presenter {
                 model.addAll(dog, String.valueOf(animalTypeHome));
 
             }else if (animalTypeHome == AnimalTypeHome.HAMSTER) {
-                //TODO
+                Hamster hamster = new Hamster(view.getName(), view.getBirthday(), view.getCommands());
+                hamster.setAnimalType(AnimalType.HOME_ANIMALS);
+                hamster.setClassId();
+                hamster.setAnimalTypeHome();
+                System.out.println("cat " + hamster);
+                model.addAll(hamster, String.valueOf(animalTypeHome));
             }
 
         } else if (animalType == AnimalType.PASK_ANIMALS) {
@@ -68,62 +73,57 @@ public class Presenter {
                 System.out.println("horses " + horses);
                 model.addAll(horses, String.valueOf(animalTypePack));
             } else if (animalTypePack == AnimalTypePack.CAMEL) {
-                //TODO
+                Camel camel = new Camel(view.getName(), view.getBirthday(), view.getCommands());
+                camel.setAnimalType(AnimalType.PASK_ANIMALS);
+                camel.setClassId();
+                camel.setAnimalTypePack();
+                System.out.println("camel " + camel);
+                model.addAll(camel, String.valueOf(animalTypePack));
             } else  if (animalTypePack == AnimalTypePack.DONKEYS) {
-                //TODO
+                Donkeys donkeys = new Donkeys(view.getName(), view.getBirthday(), view.getCommands());
+                donkeys.setAnimalType(AnimalType.PASK_ANIMALS);
+                donkeys.setClassId();
+                donkeys.setAnimalTypePack();
+                System.out.println("horses " + donkeys);
+                model.addAll(donkeys, String.valueOf(animalTypePack));
             }
-
-
         }
     }
-
-
     public void showHomeAnimals() {
         model.showHomeAnimals();
     }
-
     public void showPackAnimals() {
         model.showPackAnimals();
     }
-
     public void delAllAnimals() {
         model.delAllAnimals();
     }
 
-//    public void nawCommand() {
-//        AnimalType animalType = view.getTypeAnimals();
-//        if (animalType == AnimalType.HOME_ANIMALS){
-//            model.newCommand;
-//        } else if (animalType == AnimalType.PASK_ANIMALS){
-//
-//        }
-//
-//    }
-
     public Animals searchAnimals() {
-        AnimalType animalType = view.getTypeAnimals();
+        AnimalType animalType = (AnimalType) view.getTypeAnimals();
         if (animalType == AnimalType.HOME_ANIMALS){
             AnimalTypeHome animalTypeHome = view.getTypeAnimalsHome();
-            Animals animals = model.searchAnimals(String.valueOf(animalType), String.valueOf(animalTypeHome));
+            Animals animals = model.searchAnimals(String.valueOf(animalTypeHome));
             return animals;
         }else if (animalType == AnimalType.PASK_ANIMALS){
             AnimalTypePack animalTypePack = view.getTypeAnimalsPack();
-            Animals animals = model.searchAnimals(String.valueOf(animalType), String.valueOf(animalTypePack));
+            Animals animals = model.searchAnimals(String.valueOf(animalTypePack));
             return animals;
         }
-
         return null;
     }
 
     public void dellAnimals() {
         model.delAnimals(searchAnimals());
     }
-
     public void commandsAnimals() {
         model.commandsAnimals(searchAnimals());
     }
-
     public void addCommand() {
         model.addCommand(searchAnimals());
+    }
+    public Integer countAllAnimals() {
+        Integer count = model.countAnimals;
+        return count;
     }
 }
