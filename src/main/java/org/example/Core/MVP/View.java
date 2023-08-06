@@ -2,6 +2,7 @@ package org.example.Core.MVP;
 
 import org.example.Animals.AnimalType;
 import org.example.Animals.AnimalTypeHome;
+import org.example.Animals.AnimalTypePack;
 
 public interface View {
 
@@ -10,6 +11,8 @@ public interface View {
 
 
     AnimalTypeHome getTypeAnimalsHome();
+
+    AnimalTypePack getTypeAnimalsPack();
 
     String getName();
 

@@ -1,4 +1,4 @@
-package org.example.Client;
+package org.example;
 
 import org.example.UI.App;
 
